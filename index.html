@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        font-family: 'Figtree', Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        background-color: hsl(47, 88%, 63%);
+      }
+      .container {
+        
+        flex-direction: column;
+        margin-block: 5rem;
+        margin-inline: auto;
+        border-radius: 20px;
+        border: 2px solid black;
+        box-shadow: 7px 7px;
+        padding-top: 0.5rem;
+        width: 320px;
+        height: 480px;
+        background-color: white;
+        font-weight: bold;
+      }
+      .gambar {
+        display: flex;
+        justify-content: center;
+        background-image: url(assets/images/illustration-article.svg);
+        width: 290px;
+        height: 170px;
+        background-size: contain;
+        border-radius: 10px;
+        margin-block: 5px;
+        margin-inline: auto;
+      }
+      .learning {
+        width: 63px;
+        border-radius: 5px;
+        margin-left: 25px;
+        margin-block: 1.2rem;
+        padding: 10px;
+        background-color: hsl(47, 88%, 63%);
+      }
+      p, h2 {
+        margin-left: 25px;
+      }
+      .profile{
+        display: flex;
+        flex-direction: row;
+      }
+      .profile > img{
+        margin-left: 25px;
+        margin-top: 10px;
+        margin-right: -15px;
+        width: 30px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="gambar"></div>
+        <div class="learning">Learning</div>
+        <p style="color: hsl(0, 0%, 35%)">Published 21 Dec 2023</p>
+        <h2>HTML & CSS foundations</h2>
+        <p style="color: hsl(0, 0%, 42%)">
+          These language are the backbone of every website, defining structure,
+          content, and presentation
+        </p>
+        <div class="profile">
+          <img src="assets/images/image-avatar.webp" alt="" srcset="">
+          <p>Greg Hooper</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
